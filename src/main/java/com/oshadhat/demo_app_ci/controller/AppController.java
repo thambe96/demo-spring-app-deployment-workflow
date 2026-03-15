@@ -15,19 +15,19 @@ public class AppController {
     }
 
 
-    @GetMapping("terminate")
-    public ResponseEntity<String> kill() {
-        new Thread(() -> {
-            try {
-                Thread.sleep(1000);
-                System.out.println("Killing the Application.....!!");
-                System.exit(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        return ResponseEntity.ok("Killing the Application.....!!");
-    }
+//    @GetMapping("terminate")
+//    public ResponseEntity<String> kill() {
+//        new Thread(() -> {
+//            try {
+//                Thread.sleep(1000);
+//                System.out.println("Killing the Application.....!!");
+//                System.exit(1);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }).start();
+//        return ResponseEntity.ok("Killing the Application.....!!");
+//    }
 
 
 }
