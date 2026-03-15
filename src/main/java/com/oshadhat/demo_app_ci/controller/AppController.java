@@ -11,7 +11,7 @@ public class AppController {
 
     @GetMapping("message")
     public ResponseEntity<String> getMessage() {
-        return ResponseEntity.ok("Hey there it's Oshadhat.. !! Spring Application is up and Running!");
+        return ResponseEntity.ok("Hey there It's me Oshadhat !! This is my demo spring-boot backend for CI/CD workflow");
     }
 
 
